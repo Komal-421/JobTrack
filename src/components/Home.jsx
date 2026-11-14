@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Header from './Header.jsx'
 import Hero from './Hero.jsx'
@@ -10,8 +11,7 @@ import Footer from './Footer.jsx'
 
 function Home() {
   return (
-    <div className="min-h-screen overflow-hidden bg-[#f8faff] text-slate-900 transition-colors duration-500
-     dark:bg-slate-950 dark:text-slate-100">
+    <div className="min-h-screen w-full overflow-x-hidden bg-[#f8faff] text-slate-900 transition-colors duration-500 dark:bg-slate-950 dark:text-slate-100">
       <Header />
       <Hero />
       <Features />

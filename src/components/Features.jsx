@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {
   Columns3,
@@ -49,30 +50,65 @@ function Features() {
   ]
 
   return (
-    <section id="features" className="bg-[#f8faff] py-24 sm:py-28 h-215 transition-colors duration-300 dark:bg-slate-950">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8 relative top-25">
-        <div className="mx-auto mb-14 max-w-2xl text-center relative left-50">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-indigo-600 dark:text-indigo-400"
-          >Everything in one place</p>
-          <p style={{ marginTop: "15px" }} className="mt-4 font-display font-bold tracking-tight text-slate-950
-           dark:text-white sm:text-3xl">A calmer, smarter way to job hunt</p>
-          <p style={{ marginTop: "15px" }} className="mt-4 text-l leading-7 text-slate-600 dark:text-slate-400"
-          >Replace scattered spreadsheets and forgotten follow-ups with a workspace designed around your next opportunity.</p>
+    <section
+      id="features"
+      className="bg-[#f8faff] py-16 sm:py-20 lg:py-28 lg:h-215 transition-colors duration-300 dark:bg-slate-950"
+    >
+      <div className="mx-auto max-w-7xl px-5 lg:px-8 relative top-0 lg:top-25">
+
+        <div className="mx-auto mb-14 max-w-2xl text-center relative left-0 lg:left-50">
+
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-indigo-600 dark:text-indigo-400">
+            Everything in one place
+          </p>
+
+          <p
+            style={{ marginTop: "15px" }}
+            className="mt-4 font-display text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 dark:text-white"
+          >
+            A calmer, smarter way to job hunt
+          </p>
+
+          <p
+            style={{ marginTop: "15px" }}
+            className="mt-4 text-base leading-7 text-slate-600 dark:text-slate-400"
+          >
+            Replace scattered spreadsheets and forgotten follow-ups with a workspace designed around your next opportunity.
+          </p>
+
         </div>
 
-        <div className="relative top-18 left-6 grid grid-cols-1 gap-x-1 gap-y-7 md:grid-cols-2 lg:grid-cols-3">
+        <div className="relative top-0 left-0 lg:top-18 lg:left-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-x-1 gap-y-6 sm:gap-y-7">
+
           {features.map((feature, index) => (
-            <div key={index} style={{ padding: "23px" }} className="group h-55 w-75 rounded-3xl border border-slate-200
-             bg-white dark:border-slate-700 dark:bg-slate-900 transition-all duration-300 ease-out hover:-translate-y-2
-              hover:border-indigo-300 dark:hover:border-indigo-500 hover:shadow-[0_22px_55px_rgba(30,41,59,0.10)] 
-              dark:hover:shadow-[0_22px_55px_rgba(0,0,0,0.35)]">
-              <div className={`mb-6 flex h-12 w-12 items-center justify-center rounded-2xl ${feature.color}
-               transition-transform duration-300 group-hover:scale-110`}>{feature.icon}</div>
-              <h3 style={{ marginTop: "15px" }} className="font-display text-l font-bold text-slate-900
-               dark:text-white">{feature.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-400">{feature.desc}</p>
+
+            <div
+              key={index}
+              style={{ padding: "23px" }}
+              className="group min-h-55 h-auto w-full max-w-75 lg:h-55 lg:w-75 rounded-3xl border border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900 transition-all duration-300 ease-out hover:-translate-y-2 hover:border-indigo-300 dark:hover:border-indigo-500 hover:shadow-[0_22px_55px_rgba(30,41,59,0.10)] dark:hover:shadow-[0_22px_55px_rgba(0,0,0,0.35)]"
+            >
+
+              <div
+                className={`mb-6 flex h-12 w-12 items-center justify-center rounded-2xl ${feature.color} transition-transform duration-300 group-hover:scale-110`}
+              >
+                {feature.icon}
+              </div>
+
+              <h3
+                style={{ marginTop: "15px" }}
+                className="font-display text-base font-bold text-slate-900 dark:text-white"
+              >
+                {feature.title}
+              </h3>
+
+              <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-400">
+                {feature.desc}
+              </p>
+
             </div>
+
           ))}
+
         </div>
       </div>
     </section>
